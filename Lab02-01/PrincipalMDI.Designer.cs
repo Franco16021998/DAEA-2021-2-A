@@ -30,24 +30,24 @@ namespace Lab02_01
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManProductos = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManCategorias = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManProveedores = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regVemtas = new System.Windows.Forms.ToolStripMenuItem();
             this.regCompras = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.repVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.repCompras = new System.Windows.Forms.ToolStripMenuItem();
             this.repInventario = new System.Windows.Forms.ToolStripMenuItem();
             this.repProveedores = new System.Windows.Forms.ToolStripMenuItem();
             this.repUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.repClientes = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +64,21 @@ namespace Lab02_01
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // sistemaToolStripMenuItem
+            // 
+            this.sistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirDelSistemaToolStripMenuItem});
+            this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
+            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.sistemaToolStripMenuItem.Text = "Sistema";
+            // 
+            // salirDelSistemaToolStripMenuItem
+            // 
+            this.salirDelSistemaToolStripMenuItem.Name = "salirDelSistemaToolStripMenuItem";
+            this.salirDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.salirDelSistemaToolStripMenuItem.Text = "Salir del sistema";
+            this.salirDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.salirDelSistemaToolStripMenuItem_Click);
+            // 
             // mantenimientoToolStripMenuItem
             // 
             this.mantenimientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -75,36 +90,6 @@ namespace Lab02_01
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
             this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
-            // 
-            // procesosToolStripMenuItem
-            // 
-            this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.regVemtas,
-            this.regCompras});
-            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
-            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.procesosToolStripMenuItem.Text = "Procesos";
-            // 
-            // reportesToolStripMenuItem
-            // 
-            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.repVentas,
-            this.repCompras,
-            this.repInventario,
-            this.repProveedores,
-            this.repUsuarios,
-            this.repClientes});
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.reportesToolStripMenuItem.Text = "Reportes";
-            // 
-            // sistemaToolStripMenuItem
-            // 
-            this.sistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirDelSistemaToolStripMenuItem});
-            this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
-            this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.sistemaToolStripMenuItem.Text = "Sistema";
             // 
             // mnuManUsuarios
             // 
@@ -118,24 +103,36 @@ namespace Lab02_01
             this.mnuManProductos.Name = "mnuManProductos";
             this.mnuManProductos.Size = new System.Drawing.Size(180, 22);
             this.mnuManProductos.Text = "Productos";
+            this.mnuManProductos.Click += new System.EventHandler(this.mnuManProductos_Click);
             // 
             // mnuManCategorias
             // 
             this.mnuManCategorias.Name = "mnuManCategorias";
             this.mnuManCategorias.Size = new System.Drawing.Size(180, 22);
             this.mnuManCategorias.Text = "Categorias";
+            this.mnuManCategorias.Click += new System.EventHandler(this.mnuManCategorias_Click);
             // 
             // mnuManProveedores
             // 
             this.mnuManProveedores.Name = "mnuManProveedores";
             this.mnuManProveedores.Size = new System.Drawing.Size(180, 22);
             this.mnuManProveedores.Text = "Proveedores";
+            this.mnuManProveedores.Click += new System.EventHandler(this.mnuManProveedores_Click);
             // 
             // mnuManClientes
             // 
             this.mnuManClientes.Name = "mnuManClientes";
             this.mnuManClientes.Size = new System.Drawing.Size(180, 22);
             this.mnuManClientes.Text = "Clientes";
+            // 
+            // procesosToolStripMenuItem
+            // 
+            this.procesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.regVemtas,
+            this.regCompras});
+            this.procesosToolStripMenuItem.Name = "procesosToolStripMenuItem";
+            this.procesosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.procesosToolStripMenuItem.Text = "Procesos";
             // 
             // regVemtas
             // 
@@ -148,6 +145,19 @@ namespace Lab02_01
             this.regCompras.Name = "regCompras";
             this.regCompras.Size = new System.Drawing.Size(180, 22);
             this.regCompras.Text = "Registrar Compra";
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.repVentas,
+            this.repCompras,
+            this.repInventario,
+            this.repProveedores,
+            this.repUsuarios,
+            this.repClientes});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
             // 
             // repVentas
             // 
@@ -184,13 +194,6 @@ namespace Lab02_01
             this.repClientes.Name = "repClientes";
             this.repClientes.Size = new System.Drawing.Size(200, 22);
             this.repClientes.Text = "Reporte de clientes";
-            // 
-            // salirDelSistemaToolStripMenuItem
-            // 
-            this.salirDelSistemaToolStripMenuItem.Name = "salirDelSistemaToolStripMenuItem";
-            this.salirDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salirDelSistemaToolStripMenuItem.Text = "Salir del sistema";
-            this.salirDelSistemaToolStripMenuItem.Click += new System.EventHandler(this.salirDelSistemaToolStripMenuItem_Click);
             // 
             // PrincipalMDI
             // 

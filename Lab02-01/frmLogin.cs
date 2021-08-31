@@ -19,9 +19,21 @@ namespace Lab02_01
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            PrincipalMDI principal = new PrincipalMDI();
-            principal.Show();
-            this.Hide();
+            var Usuario = "Franco";
+            var Password = "123456";
+            if (txtUsuario.Text == Usuario && txtPassword.Text == Password)
+            {
+                PrincipalMDI principal = new PrincipalMDI();
+                principal.Show();
+                this.Hide();
+            }
+
+            else
+            {
+                MessageBox.Show("Cuenta incorrecta", "Error",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
 
         }
 
