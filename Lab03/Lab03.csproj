@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0B566CB5-36AC-48CB-880C-999159F20554}</ProjectGuid>
+    <ProjectGuid>{14C9BEA9-D81D-4DD5-AFAF-8BC30BBA253A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Lab02_01</RootNamespace>
-    <AssemblyName>Lab02-01</AssemblyName>
+    <RootNamespace>Lab03</RootNamespace>
+    <AssemblyName>Lab03</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,61 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ManCategorias.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManCategorias.Designer.cs">
-      <DependentUpon>ManCategorias.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManProductos.cs">
+    <Compile Include="Persona.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManProductos.Designer.cs">
-      <DependentUpon>ManProductos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ManProveedores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManProveedores.Designer.cs">
-      <DependentUpon>ManProveedores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ManUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManUsuario.Designer.cs">
-      <DependentUpon>ManUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PrincipalMDI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalMDI.Designer.cs">
-      <DependentUpon>PrincipalMDI.cs</DependentUpon>
+    <Compile Include="Persona.Designer.cs">
+      <DependentUpon>Persona.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ManCategorias.resx">
-      <DependentUpon>ManCategorias.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManProductos.resx">
-      <DependentUpon>ManProductos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManProveedores.resx">
-      <DependentUpon>ManProveedores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ManUsuario.resx">
-      <DependentUpon>ManUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalMDI.resx">
-      <DependentUpon>PrincipalMDI.cs</DependentUpon>
+    <EmbeddedResource Include="Persona.resx">
+      <DependentUpon>Persona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
