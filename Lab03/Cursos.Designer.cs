@@ -1,7 +1,7 @@
 ﻿
 namespace Lab03
 {
-    partial class Persona
+    partial class Cursos
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,15 @@ namespace Lab03
         private void InitializeComponent()
         {
             this.btnListar = new System.Windows.Forms.Button();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvListado = new System.Windows.Forms.DataGridView();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             this.SuspendLayout();
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(26, 25);
+            this.btnListar.Location = new System.Drawing.Point(12, 30);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 23);
             this.btnListar.TabIndex = 0;
@@ -46,19 +46,12 @@ namespace Lab03
             this.btnListar.UseVisualStyleBackColor = true;
             this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(182, 26);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(195, 20);
-            this.txtNombre.TabIndex = 1;
-            // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(383, 24);
+            this.btnBuscar.Location = new System.Drawing.Point(358, 30);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
@@ -66,23 +59,31 @@ namespace Lab03
             // dgvListado
             // 
             this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListado.Location = new System.Drawing.Point(26, 65);
+            this.dgvListado.Location = new System.Drawing.Point(12, 89);
             this.dgvListado.Name = "dgvListado";
-            this.dgvListado.Size = new System.Drawing.Size(432, 361);
-            this.dgvListado.TabIndex = 3;
+            this.dgvListado.Size = new System.Drawing.Size(421, 366);
+            this.dgvListado.TabIndex = 2;
             // 
-            // Persona
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(141, 32);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(211, 20);
+            this.txtNombre.TabIndex = 3;
+            this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // Cursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 452);
+            this.ClientSize = new System.Drawing.Size(450, 497);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnListar);
-            this.Name = "Persona";
-            this.Text = "Persona";
-            this.Load += new System.EventHandler(this.Persona_Load);
+            this.Name = "Cursos";
+            this.Text = "Cursos";
+            this.Load += new System.EventHandler(this.Cursos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -92,8 +93,8 @@ namespace Lab03
         #endregion
 
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dgvListado;
+        private System.Windows.Forms.TextBox txtNombre;
     }
 }
